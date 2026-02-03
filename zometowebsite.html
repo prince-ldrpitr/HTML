@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zomato-food delivery at your doorstep</title>
+    <style>
+        /* styles.css */
+
+/* ===== Base & Theme ===== */
+:root{
+  --red: #e23744;
+  --red-dark: #c52e39;
+  --text: #222;
+  --bg: #ffffff;
+  --muted: #fff5f6;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+/* ===== Header & Nav ===== */
+header {
+  background: var(--red);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 22px;
+}
+
+header > div:first-child {
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-transform: capitalize; /* matches your "zomato shop" text */
+}
+
+/* Link row (second div) */
+header > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 999px;
+  transition: background 160ms ease, transform 120ms ease;
+}
+
+header a:hover,
+header a:focus {
+  background: var(--red-dark);
+}
+
+header a:active {
+  transform: scale(0.98);
+}
+
+/* ===== Main ===== */
+main {
+  max-width: 900px;
+  margin: 28px auto;
+  padding: 0 18px;
+}
+
+/* Your headline div in main */
+main > div:first-child {
+  color: var(--red);
+  font-size: clamp(1.25rem, 3.5vw, 2rem);
+  font-weight: 800;
+  background: var(--muted);
+  padding: 10px 14px;
+  border-left: 6px solid var(--red);
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+
+main p {
+  margin: 0;
+  text-align: justify;
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 28px;
+  text-align: center;
+  background: var(--red);
+  color: #fff;
+  padding: 14px 18px;
+  font-weight: 600;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  header {
+    align-items: flex-start;
+    gap: 10px;
+  }
+  header > div:last-child {
+    gap: 10px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            zomato shop
+        </div>
+        <div>
+            <a href="/home">home</a>
+            <a href="/about">about</a>
+            <a href="/contact">contact</a>
+        </div>
+    </header>
+    <main>
+        <div>
+            ordre food any time,any where
+        </div>
+        <p>
+            Zomato is an Indian multinational company offering online food ordering and delivery, restaurant discovery, and dining-out services, founded in 2008 by Deepinder Goyal and Pankaj Chaddah. It evolved from a restaurant listing site, Foodiebay, to a comprehensive food tech ecosystem connecting customers, restaurants, and delivery partners. Zomato operates in numerous cities and countries, providing services like online ordering, table reservations, and Zomato Pro (now a customer membership program). The company also engages in business-to-business (B2B) supplies through Hyperpure and offers grocery delivery via its acquisition of Blinkit.
+
+        </p>
+    </main>
+    <footer>copyrigth zomato all reserved</footer>
+</body>
+</html>
